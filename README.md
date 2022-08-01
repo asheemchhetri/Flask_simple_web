@@ -6,7 +6,7 @@ Requirements to run the code
 
 | Tool   | Version |
 |--------|---------|
-| Python | \>=3.10 |
+| Python | \>=3.7  |
 | Flask  | 2.1.3   |
 
 > Please make sure that python is already setup on your machine
