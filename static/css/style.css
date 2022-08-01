@@ -1,0 +1,52 @@
+html{
+    min-height: 100%;
+    background-size: cover;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+
+}
+.custom-navbar{
+    opacity: 70%;
+    font-weight: bold;
+}
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/img1.jpeg") no-repeat center center fixed;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    background-color: transparent !important;
+}
+.landing{
+    position: relative;
+    color: whitesmoke;
+    margin-top: 20%;
+    /*border: 2px solid red;*/
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.landing-text-2{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    /*border: 2px solid green;*/
+    padding: 10px;
+    text-align: center;
+    font-weight: 300;
+}
+.content{
+    color: navajowhite;
+    text-align: left;
+    font-weight: 300;
+    margin-top: 10em;
+}
+.quote{
+    color: floralwhite;
+}
+.custom-footer{
+    opacity: 70%;
+    font-weight: 300;
+    margin-top: 5%;
+    padding: 2em;
+    position: relative;
+    text-align: center;
+}

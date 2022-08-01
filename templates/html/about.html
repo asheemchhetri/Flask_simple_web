@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../../static/img/brand.svg" type="image/x-icon">
+    <title>&nbsp;&nbsp;&nbsp;&nbsp;Hello World</title>
+    <!-- Bootstrap CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Flask specific way to specify where the CSS file resides-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+    <!--Getting the font from Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,400;1,300;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Creates a navigation bar on the top, equivalent to creating a header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top custom-navbar">
+        <div class="container-fluid">
+            <a href="/" class="navbar-brand">
+                <img src="../../static/img/brand.svg" height="38">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+                    <a href="/" class="nav-item nav-link active">Home</a>
+                    <a href="/about" class="nav-item nav-link disabled">About Me</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Landing page text to show behind main landing background image -->
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="lead text-center"><b>Some text</b></p>
+                </br/>
+                <p class="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus vitae aliquet nec ullamcorper sit.
+                    Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Pulvinar pellentesque habitant morbi tristique senectus et netus.
+                    Lectus urna duis convallis convallis. Tristique senectus et netus et. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida.
+                    In hendrerit gravida rutrum quisque non tellus orci. Donec enim diam vulputate ut pharetra. Dui id ornare arcu odio ut. Eget magna fermentum iaculis eu.
+                    In hac habitasse platea dictumst. Elementum eu facilisis sed odio morbi quis commodo. Tincidunt id aliquet risus feugiat in.
+                    Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna. Neque laoreet suspendisse interdum consectetur libero id.
+                    Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Posuere morbi leo urna molestie at elementum eu. Ut tristique et egestas quis ipsum suspendisse ultrices. Sapien pellentesque habitant morbi tristique senectus.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                </br></br>
+                </br></br>
+                </br></br>
+                <p class="lead">I am passionate to learn about Web Designing! I am looking forward to learn it using following tools ...</p>
+                <ul>
+                    <li>Python</li>
+                    <li>Flask framework</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                </ul>
+                <p class="lead">This is my favorite quote ... </p>
+                <em class="quote">“There are no secrets to success. It is the result of preparation, hard work, and learning from failure.”</em>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS file Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

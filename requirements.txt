@@ -1,0 +1,3 @@
+# Will install collected packages: MarkupSafe, itsdangerous, colorama, Werkzeug, Jinja2, click as dependencies if missing
+# when installing Flask
+Flask==2.1.3
