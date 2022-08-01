@@ -27,6 +27,10 @@ To run the application, we need to tell flask which file to accept as starting p
 - (MAC): **set FLASK_DEBUG=1**
 - **flask run** (this will start the flask instance by default on 127.0.0.1:5000)
 
+main.py: This is the name of our code file, that has logic for flask, it can be any file name.
+
+> Also above commands need to be run on "**terminal**" for MAC and "**command prompt**" for Windows.
+
 Note: `FLASK_DEBUG=1` helps to pick any code change automatically, without restarting the app, just refreshing the page reflects changes.
 
 #### Learning Materials
