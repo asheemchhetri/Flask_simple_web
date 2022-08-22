@@ -43,3 +43,5 @@ Note: `FLASK_DEBUG=1` helps to pick any code change automatically, without resta
 7. [Material Design for Bootstrap](https://mdbootstrap.com/docs/standard/navigation/footer/)
 8. [Google Font - Exo 2](https://fonts.google.com/specimen/Exo+2?query=exo)
 9. [SVG icons](https://www.svgrepo.com/svg/249746/coding-code)
+
+TO-DO:: Reading a file is good, keeps you informed about a project, but can you clean this line? This is extra here...

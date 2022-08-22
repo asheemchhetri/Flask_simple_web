@@ -24,8 +24,8 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
                     <a href="/" class="nav-item nav-link">Home</a>
-                    <a href="/about" class="nav-item nav-link disabled">About Me</a>
-                    <a href="/library" class="nav-item nav-link">Python Library</a>
+                    <a href="/about" class="nav-item nav-link">About Me</a>
+                    <a href="/library" class="nav-item nav-link disabled">Python Library</a>
                 </div>
             </div>
         </div>
@@ -34,12 +34,13 @@
     <div class="container content">
         <div class="row">
             <div class="col-md-6 left-table-section">
-                <p class="lead text-center"><b>Python</b></p>
+                <p class="lead text-center"><b>Python Libraries</b></p>
                 </br/>
-                <p class="lead">
-                    Table to show some of amazing Python libraries, and it's information
+                <p class="lead text-center">
+                    Table to show some more amazing Python libraries
                 </p>
                 <!--Using jinja template to render the python_info dictionary in html-->
+
                 <table style="width:100%">
                     <tr class="python-table-header">
                             <td>Name</td>
@@ -47,31 +48,15 @@
                             <td>Status</td>
                             <td>Version #</td>
                     </tr>
-                    {% for item in sample_data %}
-                        <tr class="python-table-content">
-                            <td>{{ item.get('name') }}</td>
-                            <td>{{ item.get('founder') }}</td>
-                            <td>{{ item.get('status') }}</td>
-                            <td>{{ item.get('version') }}</td>
-                        </tr>
-                    {% endfor %}
+                    <!--TO-DO: Populate the table below-->
                 </table>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 task-description">
                 </br></br>
                 </br></br>
                 </br></br>
-                <p class="lead">I am passionate to learn about Web Designing! I am looking forward to learn it using following tools ...</p>
-                <ul>
-                    <li>Python</li>
-                    <li>Flask framework</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Bootstrap</li>
-                </ul>
-                <p class="lead">This is my favorite quote ... </p>
-                <em class="quote">“There are no secrets to success. It is the result of preparation, hard work, and learning from failure.”</em>
+                <p class="lead">Can you populate the table on LEFT side of this text ? Look at about page for example ...</p>
             </div>
         </div>
     </div>

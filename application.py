@@ -56,6 +56,26 @@ def about():
 
     return render_template("html/about.html", sample_data=python_info)
 
+'''
+Library page implementation
+Behavior: If user clicks on the "Library" link on the main page, they will taken to page that shows more amazing python library information.
+Parameter: None
+'''
+@app.route("/library")
+def library():
+    print(f'The value of __name__ is: {__name__}')
+    library_info = [
+        {
+            "name": '--',
+            "founder": '--',
+            "status": '--',
+            "version": '--'
+        }
+        # TO-DO: Add more libraries information below
+    ]
+
+    return render_template("html/library.html")
+
 # By default, the flask web application will run on local machine at the following:
 # address: 127.0.0.1 (aka localhost)
 # port: 5000
