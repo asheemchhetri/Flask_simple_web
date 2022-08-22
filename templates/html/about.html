@@ -32,18 +32,29 @@
     <!-- Landing page text to show behind main landing background image -->
     <div class="container content">
         <div class="row">
-            <div class="col-md-6">
-                <p class="lead text-center"><b>Some text</b></p>
+            <div class="col-md-6 left-table-section">
+                <p class="lead text-center"><b>Python</b></p>
                 </br/>
                 <p class="lead">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus vitae aliquet nec ullamcorper sit.
-                    Proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Pulvinar pellentesque habitant morbi tristique senectus et netus.
-                    Lectus urna duis convallis convallis. Tristique senectus et netus et. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget gravida.
-                    In hendrerit gravida rutrum quisque non tellus orci. Donec enim diam vulputate ut pharetra. Dui id ornare arcu odio ut. Eget magna fermentum iaculis eu.
-                    In hac habitasse platea dictumst. Elementum eu facilisis sed odio morbi quis commodo. Tincidunt id aliquet risus feugiat in.
-                    Ac turpis egestas maecenas pharetra convallis posuere morbi leo urna. Neque laoreet suspendisse interdum consectetur libero id.
-                    Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet. Posuere morbi leo urna molestie at elementum eu. Ut tristique et egestas quis ipsum suspendisse ultrices. Sapien pellentesque habitant morbi tristique senectus.
+                    Table to show some of amazing Python libraries, and it's information
                 </p>
+                <!--Using jinja template to render the python_info dictionary in html-->
+                <table style="width:100%">
+                    <tr class="python-table-header">
+                            <td>Name</td>
+                            <td>Founder</td>
+                            <td>Status</td>
+                            <td>Version #</td>
+                    </tr>
+                    {% for item in sample_data %}
+                        <tr class="python-table-content">
+                            <td>{{ item.get('name') }}</td>
+                            <td>{{ item.get('founder') }}</td>
+                            <td>{{ item.get('status') }}</td>
+                            <td>{{ item.get('version') }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
             </div>
 
             <div class="col-md-6">

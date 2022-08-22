@@ -50,3 +50,15 @@ body{
     position: relative;
     text-align: center;
 }
+.left-table-section{
+    margin-top: 10em;
+}
+.python-table-header{
+    color: floralwhite;
+    text-align: left;
+}
+.python-table-content td{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: 0.02em solid rgba(127, 0, 0, .5);
+}
